@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
-import Index, { loader as clientsLoader } from './pages/Index'
+import Index, { loader as clientsLoader } from './pages/Index';
+import ErrorPage from './pages/ErrorPage';
 import './index.css'
 
 const router = createBrowserRouter([

@@ -11,8 +11,8 @@ function Layout() {
                         className={`${location.pathname === '/' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300 `} 
                         to="/">Cliente</Link>
                     <Link 
-                        className={`${location.pathname === '/clientes/nuevo' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300 `} 
-                        to="/clientes/nuevo">New Client</Link>
+                        className={`${location.pathname === '/clients/new' ? 'text-blue-300' : 'text-white'} text-2xl block mt-2 hover:text-blue-300 `} 
+                        to="/clients/new">New Client</Link>
                 </nav>
             </aside>
 

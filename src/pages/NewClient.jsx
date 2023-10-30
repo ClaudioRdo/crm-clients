@@ -1,6 +1,6 @@
 import { useNavigate, Form, useActionData, redirect } from 'react-router-dom';
 import Error from '../components/ErrorPage';
-import Form from '../components/Form';
+import FormComponent from '../components/FormComponent';
 import { addClient } from '../data/clients';
 
 export async function action({request}) {
@@ -55,7 +55,7 @@ function NewClient() {
                     method='post'
                     noValidate
                 >
-                    <Form />
+                    <FormComponent />
 
                     <input 
                         type="submit"

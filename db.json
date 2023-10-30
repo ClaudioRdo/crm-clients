@@ -1,0 +1,42 @@
+{
+  "clients": [
+    {
+      "name": "Juan (Actualizado)",
+      "company": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "phone": "102013313",
+      "notes": "Nueva Nota",
+      "id": 1
+    },
+    {
+      "name": "Karen",
+      "company": "Codigo Con Juan",
+      "email": "karen_nuevo@juan.com",
+      "phone": "138198313",
+      "notes": "Karen desea una REST API",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "name": "Miguel",
+      "phone": 319381983,
+      "email": "miguel@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "id": 5,
+      "name": "Pedro",
+      "phone": 1398198938,
+      "email": "pedro@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "name": "Juan Desde React",
+      "company": "Codigo con Juan",
+      "email": "correo@correo.com",
+      "phone": "10901",
+      "notes": "El Cliente desea un ecommerce",
+      "id": 6
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { Form, useNavigate, useLoaderData, useActionData, redirect } from 'react-router-dom'
 import { getClient, updateClient } from '../data/clients'
-import Form from '../components/Form'
 import Error from '../components/Error'
+import FormComponent from '../components/FormComponent'
 
 export async function loader({params}) {
     const client = await getClient(params.clientId)
@@ -68,7 +68,7 @@ function EditClient() {
                     method='post'
                     noValidate
                 >
-                    <Formulario 
+                    <FormComponent
                         client={client}
                     />
 
@@ -83,4 +83,4 @@ function EditClient() {
     )
 }
 
-export default EditarCliente
+export default EditClient

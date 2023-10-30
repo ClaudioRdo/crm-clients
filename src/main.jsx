@@ -4,8 +4,10 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import NewClient, {action as newClientAction } from './pages/NewClient'
+import EditClient, { loader as editClientLoader, action as editClientAction } from './pages/EditClient'
 import Index, { loader as clientsLoader } from './pages/Index';
-import ErrorPage from './pages/ErrorPage';
+import { action as deleteClientAction} from './components/Client'
+import ErrorPage from './components/ErrorPage';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -25,6 +27,17 @@ const router = createBrowserRouter([
         action: newClientAction,
         errorElement: <ErrorPage />
       },
+      {
+        path: '/clients/:clientId/edit',
+        element: <EditClient />,
+        loader: editClientLoader,
+        action: editClientAction,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: '/clients/:clientId/delete',
+        action: deleteClientAction
+      }, 
     ]
   },
 ])

@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import { getClients } from '../data/clients';
-import Cliente from '../components/Client';
+import Client from '../components/Client';
 
 export function loader() { 
     const clients = getClients();
@@ -26,7 +26,7 @@ function Index() {
 
                   <tbody>
                       {clients.map( client => (
-                          <Cliente
+                          <Client
                               client={client}
                               key={client.id}
                           />
